@@ -30,6 +30,7 @@
 		0A90D5DA2975C4AA00056095 /* PostComments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5D92975C4AA00056095 /* PostComments.swift */; };
 		0A90D5DC2975C5E300056095 /* GetPostDetailsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5DB2975C5E300056095 /* GetPostDetailsHandler.swift */; };
 		0A90D5DE2975C64C00056095 /* GetPostCommentsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5DD2975C64C00056095 /* GetPostCommentsHandler.swift */; };
+		0A90D5E12975D0C900056095 /* PostViewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5E02975D0C900056095 /* PostViewService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		0A90D5D92975C4AA00056095 /* PostComments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostComments.swift; sourceTree = "<group>"; };
 		0A90D5DB2975C5E300056095 /* GetPostDetailsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPostDetailsHandler.swift; sourceTree = "<group>"; };
 		0A90D5DD2975C64C00056095 /* GetPostCommentsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPostCommentsHandler.swift; sourceTree = "<group>"; };
+		0A90D5E02975D0C900056095 /* PostViewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,8 +128,8 @@
 		0A90D58129755E4500056095 /* Brighthr */ = {
 			isa = PBXGroup;
 			children = (
+				0A90D5DF2975C6AC00056095 /* Services */,
 				0A90D5D62975C3ED00056095 /* Model */,
-				0A90D5D22975C37E00056095 /* APIHandlers */,
 				0A90D5BD2975831A00056095 /* Network */,
 				0A90D5B42975605800056095 /* CoreData */,
 				0A90D5B129755EE900056095 /* View */,
@@ -195,6 +197,7 @@
 		0A90D5BD2975831A00056095 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				0A90D5D22975C37E00056095 /* APIHandlers */,
 				0A90D5BE2975833100056095 /* AppEnvironment.swift */,
 				0A90D5C02975837B00056095 /* APIPath.swift */,
 				0A90D5C4297597A800056095 /* APIError.swift */,
@@ -229,6 +232,14 @@
 				0A90D5D92975C4AA00056095 /* PostComments.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		0A90D5DF2975C6AC00056095 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0A90D5E02975D0C900056095 /* PostViewService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,6 +374,7 @@
 			files = (
 				0A90D5DC2975C5E300056095 /* GetPostDetailsHandler.swift in Sources */,
 				0A90D5C72975BD2E00056095 /* APILoader.swift in Sources */,
+				0A90D5E12975D0C900056095 /* PostViewService.swift in Sources */,
 				0A90D58C29755E4600056095 /* Persistence.swift in Sources */,
 				0A90D5C12975837B00056095 /* APIPath.swift in Sources */,
 				0A90D58529755E4500056095 /* MainTabView.swift in Sources */,
