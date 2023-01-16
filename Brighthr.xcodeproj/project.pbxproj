@@ -32,6 +32,7 @@
 		0A90D5DE2975C64C00056095 /* GetPostCommentsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5DD2975C64C00056095 /* GetPostCommentsHandler.swift */; };
 		0A90D5E12975D0C900056095 /* PostViewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5E02975D0C900056095 /* PostViewService.swift */; };
 		0A90D5E42975D2BF00056095 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5E32975D2BF00056095 /* PostViewModel.swift */; };
+		0A90D5E62975E80E00056095 /* PostDetailsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5E52975E80E00056095 /* PostDetailsService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		0A90D5DD2975C64C00056095 /* GetPostCommentsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPostCommentsHandler.swift; sourceTree = "<group>"; };
 		0A90D5E02975D0C900056095 /* PostViewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewService.swift; sourceTree = "<group>"; };
 		0A90D5E32975D2BF00056095 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		0A90D5E52975E80E00056095 /* PostDetailsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				0A90D5E02975D0C900056095 /* PostViewService.swift */,
+				0A90D5E52975E80E00056095 /* PostDetailsService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -388,6 +391,7 @@
 				0A90D5C72975BD2E00056095 /* APILoader.swift in Sources */,
 				0A90D5E12975D0C900056095 /* PostViewService.swift in Sources */,
 				0A90D58C29755E4600056095 /* Persistence.swift in Sources */,
+				0A90D5E62975E80E00056095 /* PostDetailsService.swift in Sources */,
 				0A90D5C12975837B00056095 /* APIPath.swift in Sources */,
 				0A90D58529755E4500056095 /* MainTabView.swift in Sources */,
 				0A90D5B82975629B00056095 /* PostListingCell.swift in Sources */,
