@@ -98,11 +98,10 @@
 		0A90D58129755E4500056095 /* Brighthr */ = {
 			isa = PBXGroup;
 			children = (
-				0A90D58229755E4500056095 /* BrighthrApp.swift */,
-				0A90D58429755E4500056095 /* ContentView.swift */,
+				0A90D5B42975605800056095 /* CoreData */,
+				0A90D5B129755EE900056095 /* View */,
+				0A90D5B32975604000056095 /* Application */,
 				0A90D58629755E4600056095 /* Assets.xcassets */,
-				0A90D58B29755E4600056095 /* Persistence.swift */,
-				0A90D58D29755E4600056095 /* Brighthr.xcdatamodeld */,
 				0A90D58829755E4600056095 /* Preview Content */,
 			);
 			path = Brighthr;
@@ -131,6 +130,31 @@
 				0A90D5A429755E4600056095 /* BrighthrUITestsLaunchTests.swift */,
 			);
 			path = BrighthrUITests;
+			sourceTree = "<group>";
+		};
+		0A90D5B129755EE900056095 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A90D58429755E4500056095 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0A90D5B32975604000056095 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				0A90D58229755E4500056095 /* BrighthrApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		0A90D5B42975605800056095 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				0A90D58D29755E4600056095 /* Brighthr.xcdatamodeld */,
+				0A90D58B29755E4600056095 /* Persistence.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
