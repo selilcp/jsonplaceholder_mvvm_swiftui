@@ -37,6 +37,7 @@
 		0A90D5EA2975F24B00056095 /* CommentListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5E92975F24B00056095 /* CommentListService.swift */; };
 		0A90D5EC2975F35300056095 /* PostCommentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5EB2975F35300056095 /* PostCommentsViewModel.swift */; };
 		0A90D5EE2975F5DC00056095 /* PostCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5ED2975F5DC00056095 /* PostCommentCell.swift */; };
+		0A90D5F229760A6600056095 /* SavedPostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5F129760A6600056095 /* SavedPostService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 		0A90D5E92975F24B00056095 /* CommentListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentListService.swift; sourceTree = "<group>"; };
 		0A90D5EB2975F35300056095 /* PostCommentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCommentsViewModel.swift; sourceTree = "<group>"; };
 		0A90D5ED2975F5DC00056095 /* PostCommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCommentCell.swift; sourceTree = "<group>"; };
+		0A90D5F129760A6600056095 /* SavedPostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPostService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,6 +253,7 @@
 		0A90D5DF2975C6AC00056095 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				0A90D5F129760A6600056095 /* SavedPostService.swift */,
 				0A90D5E02975D0C900056095 /* PostViewService.swift */,
 				0A90D5E52975E80E00056095 /* PostDetailsService.swift */,
 				0A90D5E92975F24B00056095 /* CommentListService.swift */,
@@ -409,6 +412,7 @@
 				0A90D58529755E4500056095 /* MainTabView.swift in Sources */,
 				0A90D5B82975629B00056095 /* PostListingCell.swift in Sources */,
 				0A90D5C32975891B00056095 /* APIHandler.swift in Sources */,
+				0A90D5F229760A6600056095 /* SavedPostService.swift in Sources */,
 				0A90D5C5297597A800056095 /* APIError.swift in Sources */,
 				0A90D5E82975EA7F00056095 /* PostDetailsViewModel.swift in Sources */,
 				0A90D5D52975C3A200056095 /* GetPostsHandler.swift in Sources */,
