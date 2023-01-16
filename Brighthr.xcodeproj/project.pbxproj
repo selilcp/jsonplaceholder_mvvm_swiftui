@@ -38,6 +38,7 @@
 		0A90D5EC2975F35300056095 /* PostCommentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5EB2975F35300056095 /* PostCommentsViewModel.swift */; };
 		0A90D5EE2975F5DC00056095 /* PostCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5ED2975F5DC00056095 /* PostCommentCell.swift */; };
 		0A90D5F229760A6600056095 /* SavedPostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5F129760A6600056095 /* SavedPostService.swift */; };
+		0A90D5F429760CD200056095 /* SavedPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5F329760CD200056095 /* SavedPostViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,7 @@
 		0A90D5EB2975F35300056095 /* PostCommentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCommentsViewModel.swift; sourceTree = "<group>"; };
 		0A90D5ED2975F5DC00056095 /* PostCommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCommentCell.swift; sourceTree = "<group>"; };
 		0A90D5F129760A6600056095 /* SavedPostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPostService.swift; sourceTree = "<group>"; };
+		0A90D5F329760CD200056095 /* SavedPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPostViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,6 +266,7 @@
 		0A90D5E22975D2A400056095 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				0A90D5F329760CD200056095 /* SavedPostViewModel.swift */,
 				0A90D5E32975D2BF00056095 /* PostViewModel.swift */,
 				0A90D5E72975EA7F00056095 /* PostDetailsViewModel.swift */,
 				0A90D5EB2975F35300056095 /* PostCommentsViewModel.swift */,
@@ -410,6 +413,7 @@
 				0A90D5EC2975F35300056095 /* PostCommentsViewModel.swift in Sources */,
 				0A90D5C12975837B00056095 /* APIPath.swift in Sources */,
 				0A90D58529755E4500056095 /* MainTabView.swift in Sources */,
+				0A90D5F429760CD200056095 /* SavedPostViewModel.swift in Sources */,
 				0A90D5B82975629B00056095 /* PostListingCell.swift in Sources */,
 				0A90D5C32975891B00056095 /* APIHandler.swift in Sources */,
 				0A90D5F229760A6600056095 /* SavedPostService.swift in Sources */,
