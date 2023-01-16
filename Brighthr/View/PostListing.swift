@@ -10,6 +10,10 @@ import SwiftUI
 struct PostListing: View {
     
     var body: some View {
-        
+        NavigationView {
+            List {
+                PostListingCell()
+            }
+        }
     }
 }
