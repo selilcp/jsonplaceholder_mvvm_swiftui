@@ -17,6 +17,7 @@
 		0A90D5A329755E4600056095 /* BrighthrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5A229755E4600056095 /* BrighthrUITests.swift */; };
 		0A90D5A529755E4600056095 /* BrighthrUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5A429755E4600056095 /* BrighthrUITestsLaunchTests.swift */; };
 		0A90D5B62975617400056095 /* PostListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5B52975617400056095 /* PostListing.swift */; };
+		0A90D5B82975629B00056095 /* PostListingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5B72975629B00056095 /* PostListingCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		0A90D5A229755E4600056095 /* BrighthrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrighthrUITests.swift; sourceTree = "<group>"; };
 		0A90D5A429755E4600056095 /* BrighthrUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrighthrUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0A90D5B52975617400056095 /* PostListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListing.swift; sourceTree = "<group>"; };
+		0A90D5B72975629B00056095 /* PostListingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListingCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 			children = (
 				0A90D58429755E4500056095 /* TabView.swift */,
 				0A90D5B52975617400056095 /* PostListing.swift */,
+				0A90D5B72975629B00056095 /* PostListingCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 			files = (
 				0A90D58C29755E4600056095 /* Persistence.swift in Sources */,
 				0A90D58529755E4500056095 /* TabView.swift in Sources */,
+				0A90D5B82975629B00056095 /* PostListingCell.swift in Sources */,
 				0A90D5B62975617400056095 /* PostListing.swift in Sources */,
 				0A90D58329755E4500056095 /* BrighthrApp.swift in Sources */,
 				0A90D58F29755E4600056095 /* Brighthr.xcdatamodeld in Sources */,
