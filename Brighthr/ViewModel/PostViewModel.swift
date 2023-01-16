@@ -18,7 +18,6 @@ class PostViewModel : ObservableObject {
     
     func fetchPosts(complitionHandler: @escaping (APIError?) -> () ){
         service.getPosts { [weak self] (content, error) in
-            print(error?.httpError)
             RunLoop.main.perform {
                 self?.posts = content ?? []
             }

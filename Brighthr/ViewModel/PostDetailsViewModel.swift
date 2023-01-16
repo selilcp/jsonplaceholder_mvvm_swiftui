@@ -9,18 +9,18 @@ import Foundation
 
 class PostDetailsViewModel : ObservableObject {
     
-    @Published var posts: Post?
+    @Published var post: Post?
     var service: PostDetailsService
     
     init (service: PostDetailsService) {
         self.service = service
     }
     
-    func fetchPosts(postID:Int,complitionHandler: @escaping (APIError?) -> () ){
+    func fetchPostDetails(postID:Int,complitionHandler: @escaping (APIError?) -> () ){
         service.getPostDetails(postID: postID)
         { [weak self] (content, error) in
             RunLoop.main.perform {
-                self?.posts = content
+                self?.post = content
             }
             complitionHandler(error)
         }

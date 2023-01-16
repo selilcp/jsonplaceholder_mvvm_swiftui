@@ -10,15 +10,15 @@ import SwiftUI
 struct PostDetails: View {
     
     var postId:Int
-    
+    @StateObject var viewModel: PostDetailsViewModel = PostDetailsViewModel( service: DefaultPostDetailsService() )
     
     var body: some View {
         VStack(alignment: .leading,spacing: 6) {
-            Text("Title")
+            Text(viewModel.post?.title ?? "")
                 .bold()
                 .font(.title3)
                 .padding(EdgeInsets(top: 20, leading: 20, bottom: 0, trailing: 40))
-            Text("sub..")
+            Text(viewModel.post?.body ?? "")
                 .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 40))
             Spacer()
             
@@ -41,6 +41,11 @@ struct PostDetails: View {
                 Spacer()
             }
             Spacer()
+        }
+        .onAppear(){
+            viewModel.fetchPostDetails(postID: postId) { error in
+                
+            }
         }
     }
 }
