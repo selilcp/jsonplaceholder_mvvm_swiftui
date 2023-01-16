@@ -33,6 +33,6 @@ class PostDetailsViewModel : ObservableObject {
     
     func savePost(){
         guard let post = post else {return}
-        service.savePost(post: post)
+        postSaved = service.savePost(post: post)
     }
 }

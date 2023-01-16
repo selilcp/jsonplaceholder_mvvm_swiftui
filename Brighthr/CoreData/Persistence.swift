@@ -25,11 +25,13 @@ struct PersistenceController {
         container.viewContext.automaticallyMergesChangesFromParent = true
     }
     
-    func save() {
+    func save() -> Bool{
         do {
             try container.viewContext.save()
+            return true
         } catch let error {
             print("Error saving to Core Data. \(error)")
+            return false
         }
     }
 }
