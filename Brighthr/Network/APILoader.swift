@@ -16,9 +16,10 @@ class APILoader<T: APIHandler> {
         self.urlSession = urlSession
     }
     
-    func loadAPIRequest(urlParam urls: [String: String]? = nil,
-                        queryParam query: [String: String]? = nil,
-                        bodyParam body: [String: Any]? = nil, completionHandler: @escaping (T.ResponseDataType?, APIError?) -> ()) {
+    func loadAPIRequest(urlParam urls: [String: String]? ,
+                        queryParam query: [String: String]? ,
+                        bodyParam body: [String: Any]?,
+                        completionHandler: @escaping (T.ResponseDataType?, APIError?) -> ()) {
         
         if let urlRequest = apiHandler.makeRequest(urlParam: urls,
                                                    queryParam: query,

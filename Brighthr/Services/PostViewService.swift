@@ -16,7 +16,10 @@ class DefaultPostViewService: PostViewService{
         let handler = GetPostsHandler()
         let apiLoader = APILoader(apiHandler: handler)
         
-        apiLoader.loadAPIRequest { content, error in
+        apiLoader.loadAPIRequest(urlParam: nil,
+                                 queryParam: nil,
+                                 bodyParam: nil)
+        { content, error in
             completionHandler(content ,error)
         }
     }

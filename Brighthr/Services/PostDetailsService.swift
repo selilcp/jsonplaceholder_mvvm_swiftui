@@ -8,15 +8,18 @@
 import Foundation
 
 protocol PostDetailsService {
-    func getPostDetails(completionHandler: @escaping (Post?, APIError?) -> ())
+    func getPostDetails(postID:Int, completionHandler: @escaping (Post?, APIError?) -> ())
 }
 
 class DefaultPostDetailsService: PostDetailsService{
-    func getPostDetails(completionHandler: @escaping (Post?, APIError?) -> ()) {
+    func getPostDetails(postID:Int, completionHandler: @escaping (Post?, APIError?) -> ()) {
         let handler = GetPostDetailsHandler()
-        let apiLoader = APILoader(apiHandler: handler)
+        let apiLoader = APILoader( apiHandler: handler)
         
-        apiLoader.loadAPIRequest { content, error in
+        apiLoader.loadAPIRequest(urlParam: ["postID":"\(postID)"],
+                                 queryParam: nil,
+                                 bodyParam: nil)
+        { content, error in
             completionHandler(content ,error)
         }
     }
