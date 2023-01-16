@@ -6,11 +6,11 @@
 //
 
 protocol CommentListService {
-    func getPostComments(postID:Int, completionHandler: @escaping (PostComments?, APIError?) -> ())
+    func getPostComments(postID:Int, completionHandler: @escaping ([PostComment]?, APIError?) -> ())
 }
 
 class DefaultCommentListService: CommentListService{
-    func getPostComments(postID:Int, completionHandler: @escaping (PostComments?, APIError?) -> ()) {
+    func getPostComments(postID:Int, completionHandler: @escaping ([PostComment]?, APIError?) -> ()) {
         let handler = GetPostCommentsHandler()
         let apiLoader = APILoader( apiHandler: handler)
         

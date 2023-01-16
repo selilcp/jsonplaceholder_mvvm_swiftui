@@ -26,7 +26,7 @@ class GetPostCommentsHandler: APIHandler {
         return nil
     }
     
-    func parseResponse(data: Data, response: HTTPURLResponse) throws -> PostComments {
+    func parseResponse(data: Data, response: HTTPURLResponse) throws -> [PostComment] {
         return try defaultParseResponse(data: data, response: response)
     }
 }

@@ -5,11 +5,7 @@
 //  Created by selil on 16/01/23.
 //
 
-struct PostComments: Codable{
-    var comments: [PostComment]
-}
-
-struct PostComment: Codable{
+struct PostComment: Codable, Identifiable{
     var postId:Int
     var id:Int
     var name:String

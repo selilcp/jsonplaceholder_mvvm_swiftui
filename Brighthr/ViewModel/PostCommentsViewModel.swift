@@ -9,7 +9,7 @@ import Foundation
 
 class PostCommentsViewModel : ObservableObject {
     
-    @Published var post: PostComments?
+    @Published var comments: [PostComment] = []
     var service: CommentListService
     
     init (service: CommentListService) {
@@ -20,7 +20,7 @@ class PostCommentsViewModel : ObservableObject {
         service.getPostComments (postID: postID)
         { [weak self] (content, error) in
             RunLoop.main.perform {
-                self?.post = content
+                self?.comments = content ?? []
             }
             complitionHandler(error)
         }

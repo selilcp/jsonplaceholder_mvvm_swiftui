@@ -33,7 +33,7 @@ struct PostDetails: View {
                 .cornerRadius(8)
                 .disabled(true)
             
-                NavigationLink("Comments", destination: CommentListing())
+                NavigationLink("Comments", destination: CommentListing(postId: postId))
                 .foregroundColor(.black)
                 .frame(width: 120, height: 40)
                 .background(.green)
