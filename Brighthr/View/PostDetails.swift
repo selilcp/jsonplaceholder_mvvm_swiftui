@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct PostDetails: View {
+    
+    var postId:Int
+    
+    
     var body: some View {
         VStack(alignment: .leading,spacing: 6) {
             Text("Title")

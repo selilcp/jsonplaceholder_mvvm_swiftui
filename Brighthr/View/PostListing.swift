@@ -15,7 +15,7 @@ struct PostListing: View {
         NavigationView {
             List {
                 ForEach(viewModel.posts) { post in
-                    PostListingCell(postTitle: post.title, postBody: post.body)
+                    PostListingCell(postTitle: post.title, postBody: post.body, postId: post.id)
                 }
             }
                 .onAppear () {

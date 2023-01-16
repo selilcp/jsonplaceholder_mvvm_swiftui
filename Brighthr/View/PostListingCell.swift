@@ -11,6 +11,7 @@ struct PostListingCell: View {
     
     var postTitle: String
     var postBody: String
+    var postId: Int
     
     var body: some View {
         HStack {
@@ -22,6 +23,10 @@ struct PostListingCell: View {
                     .lineLimit(3)
                     .font(.body)
             }
+            NavigationLink( destination: PostDetails(postId: postId)){
+            
+            }
+                .buttonStyle(.plain)
         }
     }
 }
