@@ -8,16 +8,16 @@
 import Foundation
 
 protocol PostViewService {
-    func getPosts(completionHandler: @escaping (Posts?, APIError?) -> ())
+    func getPosts(completionHandler: @escaping ([Post]?, APIError?) -> ())
 }
 
 class DefaultPostViewService: PostViewService{
-    func getPosts(completionHandler: @escaping (Posts?, APIError?) -> ()) {
+    func getPosts(completionHandler: @escaping ([Post]?, APIError?) -> ()) {
         let handler = GetPostsHandler()
         let apiLoader = APILoader(apiHandler: handler)
         
         apiLoader.loadAPIRequest { content, error in
-            completionHandler(content,error)
+            completionHandler(content ,error)
         }
     }
 }

@@ -7,9 +7,9 @@
 
 import Foundation
 
-class PostViewModel {
+class PostViewModel : ObservableObject {
     
-    var posts: Posts?
+    @Published var posts: [Post] = []
     var service: PostViewService
     
     init (service: PostViewService) {
@@ -18,7 +18,10 @@ class PostViewModel {
     
     func fetchPosts(complitionHandler: @escaping (APIError?) -> () ){
         service.getPosts { [weak self] (content, error) in
-            self?.posts = content
+            print(error?.httpError)
+            RunLoop.main.perform {
+                self?.posts = content ?? []
+            }
             complitionHandler(error)
         }
     }

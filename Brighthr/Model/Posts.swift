@@ -5,11 +5,7 @@
 //  Created by selil on 16/01/23.
 //
 
-struct Posts: Codable {
-    var posts : [Post]
-}
-
-struct Post: Codable{
+struct Post: Codable,Identifiable{
     var userId:Int
     var id:Int
     var title:String

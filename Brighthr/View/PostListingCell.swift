@@ -8,13 +8,17 @@
 import SwiftUI
 
 struct PostListingCell: View {
+    
+    var postTitle: String
+    var postBody: String
+    
     var body: some View {
         HStack {
             VStack(alignment: .leading,spacing: 6) {
-                Text("Title")
+                Text(postTitle)
                     .bold()
                     .font(.title3)
-                Text("Details")
+                Text(postBody)
                     .lineLimit(3)
                     .font(.body)
             }

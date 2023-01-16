@@ -26,7 +26,7 @@ class GetPostsHandler: APIHandler {
         return nil
     }
     
-    func parseResponse(data: Data, response: HTTPURLResponse) throws -> Posts {
+    func parseResponse(data: Data, response: HTTPURLResponse) throws -> [Post] {
         return try defaultParseResponse(data: data, response: response)
     }
 }
