@@ -29,6 +29,7 @@
 		0A90D5D82975C3FA00056095 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5D72975C3FA00056095 /* Posts.swift */; };
 		0A90D5DA2975C4AA00056095 /* PostComments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5D92975C4AA00056095 /* PostComments.swift */; };
 		0A90D5DC2975C5E300056095 /* GetPostDetailsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5DB2975C5E300056095 /* GetPostDetailsHandler.swift */; };
+		0A90D5DE2975C64C00056095 /* GetPostCommentsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5DD2975C64C00056095 /* GetPostCommentsHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		0A90D5D72975C3FA00056095 /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
 		0A90D5D92975C4AA00056095 /* PostComments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostComments.swift; sourceTree = "<group>"; };
 		0A90D5DB2975C5E300056095 /* GetPostDetailsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPostDetailsHandler.swift; sourceTree = "<group>"; };
+		0A90D5DD2975C64C00056095 /* GetPostCommentsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPostCommentsHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +217,7 @@
 			children = (
 				0A90D5D42975C3A200056095 /* GetPostsHandler.swift */,
 				0A90D5DB2975C5E300056095 /* GetPostDetailsHandler.swift */,
+				0A90D5DD2975C64C00056095 /* GetPostCommentsHandler.swift */,
 			);
 			path = Posts;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 				0A90D58329755E4500056095 /* BrighthrApp.swift in Sources */,
 				0A90D58F29755E4600056095 /* Brighthr.xcdatamodeld in Sources */,
 				0A90D5BF2975833100056095 /* AppEnvironment.swift in Sources */,
+				0A90D5DE2975C64C00056095 /* GetPostCommentsHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
