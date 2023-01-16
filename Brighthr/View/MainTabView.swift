@@ -11,11 +11,15 @@ struct MainTabView: View {
 
     var body: some View {
         TabView{
+            SavedPostListing()
+            .tabItem {
+                Label("Saved Posts", systemImage: "externaldrive.fill")
+            }
             PostListing()
-                .tabItem {
-                    Label("Editor", systemImage: "pencil.circle")
+            .tabItem {
+                Label("posts", systemImage: "tray.fill")
 
-                }
+            }
         }
     }
 }

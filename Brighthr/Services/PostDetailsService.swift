@@ -9,6 +9,7 @@ import Foundation
 
 protocol PostDetailsService {
     func getPostDetails(postID:Int, completionHandler: @escaping (Post?, APIError?) -> ())
+    func checkPostSaved(id:Int) -> Bool
 }
 
 class DefaultPostDetailsService: PostDetailsService{
@@ -23,4 +24,15 @@ class DefaultPostDetailsService: PostDetailsService{
             completionHandler(content ,error)
         }
     }
+    func checkPostSaved(id:Int) -> Bool{
+        let request = SavedPost.fetchRequest()
+        request.predicate = NSPredicate(format: "id = %d", id)
+        do {
+            let entities = try PersistenceController.shared.container.viewContext.fetch(request)
+            return entities.count > 0
+        } catch  {
+            return false
+        }
+    }
+    
 }

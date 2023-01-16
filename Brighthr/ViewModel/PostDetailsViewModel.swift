@@ -10,6 +10,7 @@ import Foundation
 class PostDetailsViewModel : ObservableObject {
     
     @Published var post: Post?
+    @Published var postSaved: Bool = false
     var service: PostDetailsService
     
     init (service: PostDetailsService) {
@@ -24,5 +25,10 @@ class PostDetailsViewModel : ObservableObject {
             }
             complitionHandler(error)
         }
+    }
+    
+    func checkSavedStatus(){
+        guard let id = post?.id else {return}
+        postSaved = service.checkPostSaved(id: id)
     }
 }
