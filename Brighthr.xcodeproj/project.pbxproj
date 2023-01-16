@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0A90D58329755E4500056095 /* BrighthrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D58229755E4500056095 /* BrighthrApp.swift */; };
-		0A90D58529755E4500056095 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D58429755E4500056095 /* ContentView.swift */; };
+		0A90D58529755E4500056095 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D58429755E4500056095 /* TabView.swift */; };
 		0A90D58729755E4600056095 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A90D58629755E4600056095 /* Assets.xcassets */; };
 		0A90D58A29755E4600056095 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A90D58929755E4600056095 /* Preview Assets.xcassets */; };
 		0A90D58C29755E4600056095 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D58B29755E4600056095 /* Persistence.swift */; };
@@ -38,7 +38,7 @@
 /* Begin PBXFileReference section */
 		0A90D57F29755E4500056095 /* Brighthr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brighthr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A90D58229755E4500056095 /* BrighthrApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrighthrApp.swift; sourceTree = "<group>"; };
-		0A90D58429755E4500056095 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0A90D58429755E4500056095 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
 		0A90D58629755E4600056095 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A90D58929755E4600056095 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0A90D58B29755E4600056095 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -135,7 +135,7 @@
 		0A90D5B129755EE900056095 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0A90D58429755E4500056095 /* ContentView.swift */,
+				0A90D58429755E4500056095 /* TabView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -288,7 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A90D58C29755E4600056095 /* Persistence.swift in Sources */,
-				0A90D58529755E4500056095 /* ContentView.swift in Sources */,
+				0A90D58529755E4500056095 /* TabView.swift in Sources */,
 				0A90D58329755E4500056095 /* BrighthrApp.swift in Sources */,
 				0A90D58F29755E4600056095 /* Brighthr.xcdatamodeld in Sources */,
 			);
