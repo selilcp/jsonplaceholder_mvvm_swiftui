@@ -20,6 +20,8 @@
 		0A90D5B82975629B00056095 /* PostListingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5B72975629B00056095 /* PostListingCell.swift */; };
 		0A90D5BA297565D200056095 /* PostDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5B9297565D200056095 /* PostDetails.swift */; };
 		0A90D5BC297568BC00056095 /* CommentListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5BB297568BC00056095 /* CommentListing.swift */; };
+		0A90D5BF2975833100056095 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5BE2975833100056095 /* AppEnvironment.swift */; };
+		0A90D5C12975837B00056095 /* APIPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5C02975837B00056095 /* APIPath.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		0A90D5B72975629B00056095 /* PostListingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListingCell.swift; sourceTree = "<group>"; };
 		0A90D5B9297565D200056095 /* PostDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetails.swift; sourceTree = "<group>"; };
 		0A90D5BB297568BC00056095 /* CommentListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentListing.swift; sourceTree = "<group>"; };
+		0A90D5BE2975833100056095 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		0A90D5C02975837B00056095 /* APIPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIPath.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,7 @@
 		0A90D58129755E4500056095 /* Brighthr */ = {
 			isa = PBXGroup;
 			children = (
+				0A90D5BD2975831A00056095 /* Network */,
 				0A90D5B42975605800056095 /* CoreData */,
 				0A90D5B129755EE900056095 /* View */,
 				0A90D5B32975604000056095 /* Application */,
@@ -167,6 +172,15 @@
 				0A90D58B29755E4600056095 /* Persistence.swift */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		0A90D5BD2975831A00056095 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0A90D5BE2975833100056095 /* AppEnvironment.swift */,
+				0A90D5C02975837B00056095 /* APIPath.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A90D58C29755E4600056095 /* Persistence.swift in Sources */,
+				0A90D5C12975837B00056095 /* APIPath.swift in Sources */,
 				0A90D58529755E4500056095 /* MainTabView.swift in Sources */,
 				0A90D5B82975629B00056095 /* PostListingCell.swift in Sources */,
 				0A90D5B62975617400056095 /* PostListing.swift in Sources */,
@@ -307,6 +322,7 @@
 				0A90D5BA297565D200056095 /* PostDetails.swift in Sources */,
 				0A90D58329755E4500056095 /* BrighthrApp.swift in Sources */,
 				0A90D58F29755E4600056095 /* Brighthr.xcdatamodeld in Sources */,
+				0A90D5BF2975833100056095 /* AppEnvironment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
