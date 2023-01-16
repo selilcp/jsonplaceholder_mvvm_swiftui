@@ -27,8 +27,12 @@ class PostDetailsViewModel : ObservableObject {
         }
     }
     
-    func checkSavedStatus(){
-        guard let id = post?.id else {return}
-        postSaved = service.checkPostSaved(id: id)
+    func checkSavedStatus(postID: Int){
+        postSaved = service.checkPostSaved(id: postID)
+    }
+    
+    func savePost(){
+        guard let post = post else {return}
+        service.savePost(post: post)
     }
 }

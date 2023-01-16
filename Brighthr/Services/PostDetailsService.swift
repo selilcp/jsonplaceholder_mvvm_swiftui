@@ -10,6 +10,7 @@ import Foundation
 protocol PostDetailsService {
     func getPostDetails(postID:Int, completionHandler: @escaping (Post?, APIError?) -> ())
     func checkPostSaved(id:Int) -> Bool
+    func savePost(post:Post)
 }
 
 class DefaultPostDetailsService: PostDetailsService{
@@ -33,6 +34,14 @@ class DefaultPostDetailsService: PostDetailsService{
         } catch  {
             return false
         }
+    }
+    func savePost(post: Post) {
+        let entity = SavedPost(context: PersistenceController.shared.container.viewContext)
+        entity.userId = Int64(post.userId)
+        entity.id = Int64(post.id)
+        entity.title = post.title
+        entity.body = post.body
+        PersistenceController.shared.save()
     }
     
 }

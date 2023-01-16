@@ -25,12 +25,13 @@ struct PostDetails: View {
             HStack(spacing: 40) {
                 Spacer()
                 Button("Saved") {
+                    viewModel.savePost()
                 }
                 .foregroundColor(.black)
                 .frame(width: 120, height: 40)
                 .background(viewModel.postSaved ? .gray : .orange)
                 .cornerRadius(8)
-                .disabled(!viewModel.postSaved)
+                .disabled(viewModel.postSaved)
             
                 NavigationLink("Comments", destination: CommentListing(postId: postId))
                 .foregroundColor(.black)
@@ -42,8 +43,8 @@ struct PostDetails: View {
             Spacer()
         }
         .onAppear(){
+            viewModel.checkSavedStatus(postID: postId)
             viewModel.fetchPostDetails(postID: postId) { error in
-                
             }
         }
     }
