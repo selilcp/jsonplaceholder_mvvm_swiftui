@@ -26,7 +26,6 @@ struct PostListing: View {
     
     func fetchPosts(){
         viewModel.fetchPosts(complitionHandler: { error in
-            print("dsd")
         })
     }
 }

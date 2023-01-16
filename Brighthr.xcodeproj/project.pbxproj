@@ -39,6 +39,7 @@
 		0A90D5EE2975F5DC00056095 /* PostCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5ED2975F5DC00056095 /* PostCommentCell.swift */; };
 		0A90D5F229760A6600056095 /* SavedPostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5F129760A6600056095 /* SavedPostService.swift */; };
 		0A90D5F429760CD200056095 /* SavedPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5F329760CD200056095 /* SavedPostViewModel.swift */; };
+		0A90D5F629760DA500056095 /* SavedPostListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5F529760DA500056095 /* SavedPostListing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 		0A90D5ED2975F5DC00056095 /* PostCommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCommentCell.swift; sourceTree = "<group>"; };
 		0A90D5F129760A6600056095 /* SavedPostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPostService.swift; sourceTree = "<group>"; };
 		0A90D5F329760CD200056095 /* SavedPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPostViewModel.swift; sourceTree = "<group>"; };
+		0A90D5F529760DA500056095 /* SavedPostListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPostListing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				0A90D58429755E4500056095 /* MainTabView.swift */,
+				0A90D5F529760DA500056095 /* SavedPostListing.swift */,
 				0A90D5B52975617400056095 /* PostListing.swift */,
 				0A90D5B72975629B00056095 /* PostListingCell.swift */,
 				0A90D5B9297565D200056095 /* PostDetails.swift */,
@@ -408,6 +411,7 @@
 				0A90D5DC2975C5E300056095 /* GetPostDetailsHandler.swift in Sources */,
 				0A90D5C72975BD2E00056095 /* APILoader.swift in Sources */,
 				0A90D5E12975D0C900056095 /* PostViewService.swift in Sources */,
+				0A90D5F629760DA500056095 /* SavedPostListing.swift in Sources */,
 				0A90D58C29755E4600056095 /* Persistence.swift in Sources */,
 				0A90D5E62975E80E00056095 /* PostDetailsService.swift in Sources */,
 				0A90D5EC2975F35300056095 /* PostCommentsViewModel.swift in Sources */,

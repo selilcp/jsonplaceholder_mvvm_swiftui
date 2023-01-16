@@ -9,18 +9,18 @@ import Foundation
 
 class PostCommentsViewModel : ObservableObject {
     
-    @Published var post: [SavedPost] = []
-    var service: SavedPostService
+    @Published var comments: [PostComment] = []
+    var service: CommentListService
     
-    init (service: SavedPostService) {
+    init (service: CommentListService) {
         self.service = service
     }
     
-    func fetchPostList(complitionHandler: @escaping (Error?) -> () ){
-        service.getSavedPosts
+    func fetchPostDetails(postID:Int,complitionHandler: @escaping (APIError?) -> () ){
+        service.getPostComments (postID: postID)
         { [weak self] (content, error) in
             RunLoop.main.perform {
-                self?.post = content ?? []
+                self?.comments = content ?? []
             }
             complitionHandler(error)
         }
