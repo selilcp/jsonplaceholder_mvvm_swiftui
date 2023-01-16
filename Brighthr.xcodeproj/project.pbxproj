@@ -28,6 +28,7 @@
 		0A90D5D52975C3A200056095 /* GetPostsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5D42975C3A200056095 /* GetPostsHandler.swift */; };
 		0A90D5D82975C3FA00056095 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5D72975C3FA00056095 /* Posts.swift */; };
 		0A90D5DA2975C4AA00056095 /* PostComments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5D92975C4AA00056095 /* PostComments.swift */; };
+		0A90D5DC2975C5E300056095 /* GetPostDetailsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5DB2975C5E300056095 /* GetPostDetailsHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		0A90D5D42975C3A200056095 /* GetPostsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPostsHandler.swift; sourceTree = "<group>"; };
 		0A90D5D72975C3FA00056095 /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
 		0A90D5D92975C4AA00056095 /* PostComments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostComments.swift; sourceTree = "<group>"; };
+		0A90D5DB2975C5E300056095 /* GetPostDetailsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPostDetailsHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				0A90D5D42975C3A200056095 /* GetPostsHandler.swift */,
+				0A90D5DB2975C5E300056095 /* GetPostDetailsHandler.swift */,
 			);
 			path = Posts;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A90D5DC2975C5E300056095 /* GetPostDetailsHandler.swift in Sources */,
 				0A90D5C72975BD2E00056095 /* APILoader.swift in Sources */,
 				0A90D58C29755E4600056095 /* Persistence.swift in Sources */,
 				0A90D5C12975837B00056095 /* APIPath.swift in Sources */,
