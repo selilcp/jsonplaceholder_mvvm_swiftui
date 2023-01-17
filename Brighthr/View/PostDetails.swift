@@ -12,6 +12,8 @@ struct PostDetails: View {
     var postId:Int
     @StateObject var viewModel: PostDetailsViewModel = PostDetailsViewModel( service: DefaultPostDetailsService() )
     
+    @State private var apiError:APIError? = nil
+    
     var body: some View {
         VStack(alignment: .leading,spacing: 6) {
             Text(viewModel.post?.title ?? "")
@@ -45,7 +47,13 @@ struct PostDetails: View {
         .onAppear(){
             viewModel.checkSavedStatus(postID: postId)
             viewModel.fetchPostDetails(postID: postId) { error in
+                apiError = error
             }
+        }
+        .alert(item: $apiError) { error in
+            Alert(title: Text("Error"),
+                  message: Text(error.alertMessage),
+                  dismissButton: .default(Text("Ok") ))
         }
     }
 }

@@ -11,6 +11,8 @@ struct PostListing: View {
     
     @StateObject var viewModel: PostListViewModel = PostListViewModel(service: DefaultPostListService())
     
+    @State private var apiError:APIError? = nil
+    
     var body: some View {
         NavigationView {
             List {
@@ -21,11 +23,18 @@ struct PostListing: View {
             .onAppear () {
                 fetchPosts()
             }
+            .alert(item: $apiError) { error in
+                Alert(title: Text("Error"),
+                      message: Text(error.alertMessage),
+                      dismissButton: .default(Text("Ok") ))
+            }
+   
         }
     }
     
     func fetchPosts(){
         viewModel.fetchPosts(complitionHandler: { error in
+            apiError = error
         })
     }
 }

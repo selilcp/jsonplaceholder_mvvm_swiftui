@@ -17,13 +17,25 @@ enum HttpError:Int{
     case other
 }
 
-struct APIError:Error{
+struct APIError:Error,Identifiable{
     
     private var errorMessage:String?
+    var id: Int
     var httpError:HttpError
     
     init(httpStatusCode:Int,message:String?){
+        id = httpStatusCode
         errorMessage = message
         httpError = HttpError(rawValue: httpStatusCode) ?? .other
+    }
+    
+    var alertMessage: String {
+        switch httpError{
+        case .internalServerError : return "Internal server error"
+        case .timedOut: return "Time out"
+        case .serviceUnavailable: return "Service unavailable"
+        case .unauthorized: return "UnAuthorized access"
+        default: return "Something went wrong, please try again later"
+        }
     }
 }
