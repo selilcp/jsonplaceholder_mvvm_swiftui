@@ -13,7 +13,7 @@
 		0A90D58A29755E4600056095 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A90D58929755E4600056095 /* Preview Assets.xcassets */; };
 		0A90D58C29755E4600056095 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D58B29755E4600056095 /* Persistence.swift */; };
 		0A90D58F29755E4600056095 /* Brighthr.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D58D29755E4600056095 /* Brighthr.xcdatamodeld */; };
-		0A90D59929755E4600056095 /* BrighthrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D59829755E4600056095 /* BrighthrTests.swift */; };
+		0A90D59929755E4600056095 /* PostListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D59829755E4600056095 /* PostListViewModelTests.swift */; };
 		0A90D5A329755E4600056095 /* BrighthrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5A229755E4600056095 /* BrighthrUITests.swift */; };
 		0A90D5A529755E4600056095 /* BrighthrUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5A429755E4600056095 /* BrighthrUITestsLaunchTests.swift */; };
 		0A90D5B62975617400056095 /* PostListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5B52975617400056095 /* PostListing.swift */; };
@@ -70,7 +70,7 @@
 		0A90D58B29755E4600056095 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		0A90D58E29755E4600056095 /* Brighthr.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Brighthr.xcdatamodel; sourceTree = "<group>"; };
 		0A90D59429755E4600056095 /* BrighthrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrighthrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A90D59829755E4600056095 /* BrighthrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrighthrTests.swift; sourceTree = "<group>"; };
+		0A90D59829755E4600056095 /* PostListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModelTests.swift; sourceTree = "<group>"; };
 		0A90D59E29755E4600056095 /* BrighthrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrighthrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A90D5A229755E4600056095 /* BrighthrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrighthrUITests.swift; sourceTree = "<group>"; };
 		0A90D5A429755E4600056095 /* BrighthrUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrighthrUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -175,7 +175,7 @@
 		0A90D59729755E4600056095 /* BrighthrTests */ = {
 			isa = PBXGroup;
 			children = (
-				0A90D59829755E4600056095 /* BrighthrTests.swift */,
+				0A90D59829755E4600056095 /* PostListViewModelTests.swift */,
 				0A90D5FA297635CA00056095 /* MockPostListApiService.swift */,
 			);
 			path = BrighthrTests;
@@ -458,7 +458,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A90D5FB297635CA00056095 /* MockPostListApiService.swift in Sources */,
-				0A90D59929755E4600056095 /* BrighthrTests.swift in Sources */,
+				0A90D59929755E4600056095 /* PostListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
