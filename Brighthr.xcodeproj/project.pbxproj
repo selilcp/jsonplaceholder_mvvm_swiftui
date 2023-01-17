@@ -100,6 +100,7 @@
 		0A90D5F529760DA500056095 /* SavedPostListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPostListing.swift; sourceTree = "<group>"; };
 		0A90D5F82976336E00056095 /* NotificationNameExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNameExtension.swift; sourceTree = "<group>"; };
 		0A90D5FA297635CA00056095 /* MockPostListApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPostListApiService.swift; sourceTree = "<group>"; };
+		0A90D5FC29763F8200056095 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +151,7 @@
 		0A90D58129755E4500056095 /* Brighthr */ = {
 			isa = PBXGroup;
 			children = (
+				0A90D5FC29763F8200056095 /* Info.plist */,
 				0A90D5B129755EE900056095 /* View */,
 				0A90D5D62975C3ED00056095 /* Model */,
 				0A90D5E22975D2A400056095 /* ViewModel */,
@@ -611,7 +613,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Brighthr/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = Brighthr/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -639,7 +641,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Brighthr/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = Brighthr/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

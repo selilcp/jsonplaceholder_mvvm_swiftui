@@ -18,9 +18,9 @@ struct PostListing: View {
                     PostListingCell(postTitle: post.title, postBody: post.body, postId: post.id)
                 }
             }
-                .onAppear () {
-                    fetchPosts()
-                }
+            .onAppear () {
+                fetchPosts()
+            }
         }
     }
     
