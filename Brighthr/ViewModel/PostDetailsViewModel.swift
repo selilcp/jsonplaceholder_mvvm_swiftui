@@ -34,5 +34,12 @@ class PostDetailsViewModel : ObservableObject {
     func savePost(){
         guard let post = post else {return}
         postSaved = service.savePost(post: post)
+        updateCount()
+    }
+    func updateCount(){
+        let count = service.getSavedPostCount()
+        NotificationCenter.default.post(name: .savedPostCount,
+                                        object: nil,
+                                        userInfo: ["savedCount":count])
     }
 }

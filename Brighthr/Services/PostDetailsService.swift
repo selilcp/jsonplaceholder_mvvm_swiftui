@@ -11,6 +11,7 @@ protocol PostDetailsService {
     func getPostDetails(postID:Int, completionHandler: @escaping (Post?, APIError?) -> ())
     func checkPostSaved(id:Int) -> Bool
     func savePost(post:Post) -> Bool
+    func getSavedPostCount() -> Int
 }
 
 class DefaultPostDetailsService: PostDetailsService{
@@ -43,5 +44,9 @@ class DefaultPostDetailsService: PostDetailsService{
         entity.body = post.body
         return PersistenceController.shared.save()
     }
-    
+    func getSavedPostCount() -> Int{
+        let request = SavedPost.fetchRequest()
+        let entities = try? PersistenceController.shared.container.viewContext.fetch(request)
+        return entities?.count ?? 0
+    }
 }

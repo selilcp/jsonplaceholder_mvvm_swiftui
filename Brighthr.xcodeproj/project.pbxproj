@@ -40,6 +40,7 @@
 		0A90D5F229760A6600056095 /* SavedPostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5F129760A6600056095 /* SavedPostService.swift */; };
 		0A90D5F429760CD200056095 /* SavedPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5F329760CD200056095 /* SavedPostViewModel.swift */; };
 		0A90D5F629760DA500056095 /* SavedPostListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5F529760DA500056095 /* SavedPostListing.swift */; };
+		0A90D5F92976336E00056095 /* NotificationNameExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5F82976336E00056095 /* NotificationNameExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		0A90D5F129760A6600056095 /* SavedPostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPostService.swift; sourceTree = "<group>"; };
 		0A90D5F329760CD200056095 /* SavedPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPostViewModel.swift; sourceTree = "<group>"; };
 		0A90D5F529760DA500056095 /* SavedPostListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPostListing.swift; sourceTree = "<group>"; };
+		0A90D5F82976336E00056095 /* NotificationNameExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNameExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 				0A90D5BD2975831A00056095 /* Network */,
 				0A90D5B42975605800056095 /* CoreData */,
 				0A90D5B32975604000056095 /* Application */,
+				0A90D5F72976334300056095 /* Utilities */,
 				0A90D58629755E4600056095 /* Assets.xcassets */,
 				0A90D58829755E4600056095 /* Preview Content */,
 			);
@@ -275,6 +278,14 @@
 				0A90D5EB2975F35300056095 /* PostCommentsViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0A90D5F72976334300056095 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				0A90D5F82976336E00056095 /* NotificationNameExtension.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -419,6 +430,7 @@
 				0A90D58529755E4500056095 /* MainTabView.swift in Sources */,
 				0A90D5F429760CD200056095 /* SavedPostViewModel.swift in Sources */,
 				0A90D5B82975629B00056095 /* PostListingCell.swift in Sources */,
+				0A90D5F92976336E00056095 /* NotificationNameExtension.swift in Sources */,
 				0A90D5C32975891B00056095 /* APIHandler.swift in Sources */,
 				0A90D5F229760A6600056095 /* SavedPostService.swift in Sources */,
 				0A90D5C5297597A800056095 /* APIError.swift in Sources */,

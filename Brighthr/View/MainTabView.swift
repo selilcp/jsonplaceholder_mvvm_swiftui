@@ -8,12 +8,17 @@
 import SwiftUI
 
 struct MainTabView: View {
+    
+    @State var savedCount:Int = 0
 
     var body: some View {
         TabView{
             SavedPostListing()
             .tabItem {
-                Label("Saved Posts", systemImage: "externaldrive.fill")
+                Label("Saved Posts \(savedCount)", systemImage: "externaldrive.fill")
+            }
+            .onReceive(NotificationCenter.default.publisher(for: .savedPostCount)) { output in
+                savedCount = output.userInfo?["savedCount"] as? Int ?? 0
             }
             PostListing()
             .tabItem {

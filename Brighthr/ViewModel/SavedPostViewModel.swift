@@ -22,7 +22,12 @@ class SavedPostViewModel : ObservableObject {
             RunLoop.main.perform {
                 self?.posts = content ?? []
             }
+            self?.updatePostCount(count: content?.count ?? 0)
             complitionHandler(error)
         }
+    }
+    
+    func updatePostCount(count:Int){
+        NotificationCenter.default.post(name: .savedPostCount , object: nil,userInfo: ["savedCount":count])
     }
 }
