@@ -30,8 +30,8 @@
 		0A90D5DA2975C4AA00056095 /* PostComments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5D92975C4AA00056095 /* PostComments.swift */; };
 		0A90D5DC2975C5E300056095 /* GetPostDetailsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5DB2975C5E300056095 /* GetPostDetailsHandler.swift */; };
 		0A90D5DE2975C64C00056095 /* GetPostCommentsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5DD2975C64C00056095 /* GetPostCommentsHandler.swift */; };
-		0A90D5E12975D0C900056095 /* PostViewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5E02975D0C900056095 /* PostViewService.swift */; };
-		0A90D5E42975D2BF00056095 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5E32975D2BF00056095 /* PostViewModel.swift */; };
+		0A90D5E12975D0C900056095 /* PostListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5E02975D0C900056095 /* PostListService.swift */; };
+		0A90D5E42975D2BF00056095 /* PostListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5E32975D2BF00056095 /* PostListViewModel.swift */; };
 		0A90D5E62975E80E00056095 /* PostDetailsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5E52975E80E00056095 /* PostDetailsService.swift */; };
 		0A90D5E82975EA7F00056095 /* PostDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5E72975EA7F00056095 /* PostDetailsViewModel.swift */; };
 		0A90D5EA2975F24B00056095 /* CommentListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5E92975F24B00056095 /* CommentListService.swift */; };
@@ -41,6 +41,7 @@
 		0A90D5F429760CD200056095 /* SavedPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5F329760CD200056095 /* SavedPostViewModel.swift */; };
 		0A90D5F629760DA500056095 /* SavedPostListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5F529760DA500056095 /* SavedPostListing.swift */; };
 		0A90D5F92976336E00056095 /* NotificationNameExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5F82976336E00056095 /* NotificationNameExtension.swift */; };
+		0A90D5FB297635CA00056095 /* MockPostListApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D5FA297635CA00056095 /* MockPostListApiService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,8 +88,8 @@
 		0A90D5D92975C4AA00056095 /* PostComments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostComments.swift; sourceTree = "<group>"; };
 		0A90D5DB2975C5E300056095 /* GetPostDetailsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPostDetailsHandler.swift; sourceTree = "<group>"; };
 		0A90D5DD2975C64C00056095 /* GetPostCommentsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPostCommentsHandler.swift; sourceTree = "<group>"; };
-		0A90D5E02975D0C900056095 /* PostViewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewService.swift; sourceTree = "<group>"; };
-		0A90D5E32975D2BF00056095 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		0A90D5E02975D0C900056095 /* PostListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListService.swift; sourceTree = "<group>"; };
+		0A90D5E32975D2BF00056095 /* PostListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModel.swift; sourceTree = "<group>"; };
 		0A90D5E52975E80E00056095 /* PostDetailsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsService.swift; sourceTree = "<group>"; };
 		0A90D5E72975EA7F00056095 /* PostDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewModel.swift; sourceTree = "<group>"; };
 		0A90D5E92975F24B00056095 /* CommentListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentListService.swift; sourceTree = "<group>"; };
@@ -98,6 +99,7 @@
 		0A90D5F329760CD200056095 /* SavedPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPostViewModel.swift; sourceTree = "<group>"; };
 		0A90D5F529760DA500056095 /* SavedPostListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPostListing.swift; sourceTree = "<group>"; };
 		0A90D5F82976336E00056095 /* NotificationNameExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNameExtension.swift; sourceTree = "<group>"; };
+		0A90D5FA297635CA00056095 /* MockPostListApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPostListApiService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				0A90D59829755E4600056095 /* BrighthrTests.swift */,
+				0A90D5FA297635CA00056095 /* MockPostListApiService.swift */,
 			);
 			path = BrighthrTests;
 			sourceTree = "<group>";
@@ -262,7 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				0A90D5F129760A6600056095 /* SavedPostService.swift */,
-				0A90D5E02975D0C900056095 /* PostViewService.swift */,
+				0A90D5E02975D0C900056095 /* PostListService.swift */,
 				0A90D5E52975E80E00056095 /* PostDetailsService.swift */,
 				0A90D5E92975F24B00056095 /* CommentListService.swift */,
 			);
@@ -273,7 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				0A90D5F329760CD200056095 /* SavedPostViewModel.swift */,
-				0A90D5E32975D2BF00056095 /* PostViewModel.swift */,
+				0A90D5E32975D2BF00056095 /* PostListViewModel.swift */,
 				0A90D5E72975EA7F00056095 /* PostDetailsViewModel.swift */,
 				0A90D5EB2975F35300056095 /* PostCommentsViewModel.swift */,
 			);
@@ -418,10 +421,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A90D5E42975D2BF00056095 /* PostViewModel.swift in Sources */,
+				0A90D5E42975D2BF00056095 /* PostListViewModel.swift in Sources */,
 				0A90D5DC2975C5E300056095 /* GetPostDetailsHandler.swift in Sources */,
 				0A90D5C72975BD2E00056095 /* APILoader.swift in Sources */,
-				0A90D5E12975D0C900056095 /* PostViewService.swift in Sources */,
+				0A90D5E12975D0C900056095 /* PostListService.swift in Sources */,
 				0A90D5F629760DA500056095 /* SavedPostListing.swift in Sources */,
 				0A90D58C29755E4600056095 /* Persistence.swift in Sources */,
 				0A90D5E62975E80E00056095 /* PostDetailsService.swift in Sources */,
@@ -454,6 +457,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A90D5FB297635CA00056095 /* MockPostListApiService.swift in Sources */,
 				0A90D59929755E4600056095 /* BrighthrTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

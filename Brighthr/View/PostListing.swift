@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PostListing: View {
     
-    @StateObject var viewModel: PostViewModel = PostViewModel(service: DefaultPostViewService())
+    @StateObject var viewModel: PostListViewModel = PostListViewModel(service: DefaultPostListService())
     
     var body: some View {
         NavigationView {
