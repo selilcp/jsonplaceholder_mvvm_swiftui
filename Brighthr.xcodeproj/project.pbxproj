@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A3E4C6B297827D300DDC5F8 /* PostDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E4C6A297827D300DDC5F8 /* PostDetailsViewModelTests.swift */; };
+		0A3E4C6D2978282B00DDC5F8 /* MockPostDetailsApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E4C6C2978282B00DDC5F8 /* MockPostDetailsApiService.swift */; };
 		0A90D58329755E4500056095 /* BrighthrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D58229755E4500056095 /* BrighthrApp.swift */; };
 		0A90D58529755E4500056095 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D58429755E4500056095 /* MainTabView.swift */; };
 		0A90D58729755E4600056095 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A90D58629755E4600056095 /* Assets.xcassets */; };
@@ -62,6 +64,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A3E4C6A297827D300DDC5F8 /* PostDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewModelTests.swift; sourceTree = "<group>"; };
+		0A3E4C6C2978282B00DDC5F8 /* MockPostDetailsApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPostDetailsApiService.swift; sourceTree = "<group>"; };
 		0A90D57F29755E4500056095 /* Brighthr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brighthr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A90D58229755E4500056095 /* BrighthrApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrighthrApp.swift; sourceTree = "<group>"; };
 		0A90D58429755E4500056095 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
@@ -179,6 +183,8 @@
 			children = (
 				0A90D59829755E4600056095 /* PostListViewModelTests.swift */,
 				0A90D5FA297635CA00056095 /* MockPostListApiService.swift */,
+				0A3E4C6A297827D300DDC5F8 /* PostDetailsViewModelTests.swift */,
+				0A3E4C6C2978282B00DDC5F8 /* MockPostDetailsApiService.swift */,
 			);
 			path = BrighthrTests;
 			sourceTree = "<group>";
@@ -460,7 +466,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A90D5FB297635CA00056095 /* MockPostListApiService.swift in Sources */,
+				0A3E4C6B297827D300DDC5F8 /* PostDetailsViewModelTests.swift in Sources */,
 				0A90D59929755E4600056095 /* PostListViewModelTests.swift in Sources */,
+				0A3E4C6D2978282B00DDC5F8 /* MockPostDetailsApiService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
