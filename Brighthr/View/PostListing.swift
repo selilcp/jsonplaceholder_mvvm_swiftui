@@ -17,10 +17,15 @@ struct PostListing: View {
         NavigationView {
             List {
                 ForEach(viewModel.posts) { post in
-                    PostListingCell(postTitle: post.title, postBody: post.body, postId: post.id)
+                    let user = viewModel.getUsername(userid: post.userId)
+                    PostListingCell(postTitle: post.title,
+                                    username: user,
+                                    postBody: post.body,
+                                    postId: post.id)
                 }
             }
             .onAppear () {
+                fetchUsersList()
                 fetchPosts()
             }
             .alert(item: $apiError) { error in
@@ -30,6 +35,12 @@ struct PostListing: View {
             }
    
         }
+    }
+    
+    func fetchUsersList(){
+        viewModel.fetchUsersList(complitionHandler: { error in
+            apiError = error
+        })
     }
     
     func fetchPosts(){

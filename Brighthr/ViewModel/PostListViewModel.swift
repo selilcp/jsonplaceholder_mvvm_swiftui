@@ -34,4 +34,11 @@ class PostListViewModel : ObservableObject {
             complitionHandler(error)
         }
     }
+
+    func getUsername(userid: Int) -> String?{
+        if let user = users.first(where: {$0.id == userid}){
+            return user.username
+        }
+        return nil
+    }
 }
