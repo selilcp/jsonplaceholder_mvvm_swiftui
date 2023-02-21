@@ -10,6 +10,7 @@ import SwiftUI
 struct PostListingCell: View {
     
     var postTitle: String
+    var username: String?
     var postBody: String
     var postId: Int
     
@@ -19,6 +20,11 @@ struct PostListingCell: View {
                 Text(postTitle)
                     .bold()
                     .font(.title3)
+                if let user = username{
+                    Text(user)
+                    .font(Font.subheadline.weight(.medium))
+                    .foregroundColor(Color.blue)
+                }
                 Text(postBody)
                     .lineLimit(3)
                     .font(.body)
