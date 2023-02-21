@@ -15,6 +15,8 @@ struct APIPath{
     
     var getPost:String { "\(baseURL)posts/" }
     
+    var getUsersList:String { "\(baseURL)users/" }
+    
     var getPostDetails:String { "\(baseURL)posts/{postID}/" }
     
     var getPostComments:String { "\(baseURL)posts/{postID}/comments/" }
