@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0A3E4C6B297827D300DDC5F8 /* PostDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E4C6A297827D300DDC5F8 /* PostDetailsViewModelTests.swift */; };
 		0A3E4C6D2978282B00DDC5F8 /* MockPostDetailsApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E4C6C2978282B00DDC5F8 /* MockPostDetailsApiService.swift */; };
+		0A7B08E029A55174000504FE /* GetUsersHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7B08DF29A55174000504FE /* GetUsersHandler.swift */; };
+		0A7B08E229A55260000504FE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7B08E129A55260000504FE /* User.swift */; };
 		0A90D58329755E4500056095 /* BrighthrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D58229755E4500056095 /* BrighthrApp.swift */; };
 		0A90D58529755E4500056095 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90D58429755E4500056095 /* MainTabView.swift */; };
 		0A90D58729755E4600056095 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A90D58629755E4600056095 /* Assets.xcassets */; };
@@ -66,6 +68,8 @@
 /* Begin PBXFileReference section */
 		0A3E4C6A297827D300DDC5F8 /* PostDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewModelTests.swift; sourceTree = "<group>"; };
 		0A3E4C6C2978282B00DDC5F8 /* MockPostDetailsApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPostDetailsApiService.swift; sourceTree = "<group>"; };
+		0A7B08DF29A55174000504FE /* GetUsersHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUsersHandler.swift; sourceTree = "<group>"; };
+		0A7B08E129A55260000504FE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0A90D57F29755E4500056095 /* Brighthr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brighthr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A90D58229755E4500056095 /* BrighthrApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrighthrApp.swift; sourceTree = "<group>"; };
 		0A90D58429755E4500056095 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
@@ -132,6 +136,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A7B08DE29A5515F000504FE /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				0A7B08DF29A55174000504FE /* GetUsersHandler.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
 		0A90D57629755E4500056095 = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +257,7 @@
 		0A90D5D22975C37E00056095 /* APIHandlers */ = {
 			isa = PBXGroup;
 			children = (
+				0A7B08DE29A5515F000504FE /* Users */,
 				0A90D5D32975C37E00056095 /* Posts */,
 			);
 			path = APIHandlers;
@@ -265,6 +278,7 @@
 			children = (
 				0A90D5D72975C3FA00056095 /* Posts.swift */,
 				0A90D5D92975C4AA00056095 /* PostComments.swift */,
+				0A7B08E129A55260000504FE /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -439,6 +453,7 @@
 				0A90D5EC2975F35300056095 /* PostCommentsViewModel.swift in Sources */,
 				0A90D5C12975837B00056095 /* APIPath.swift in Sources */,
 				0A90D58529755E4500056095 /* MainTabView.swift in Sources */,
+				0A7B08E029A55174000504FE /* GetUsersHandler.swift in Sources */,
 				0A90D5F429760CD200056095 /* SavedPostViewModel.swift in Sources */,
 				0A90D5B82975629B00056095 /* PostListingCell.swift in Sources */,
 				0A90D5F92976336E00056095 /* NotificationNameExtension.swift in Sources */,
@@ -457,6 +472,7 @@
 				0A90D58329755E4500056095 /* BrighthrApp.swift in Sources */,
 				0A90D58F29755E4600056095 /* Brighthr.xcdatamodeld in Sources */,
 				0A90D5BF2975833100056095 /* AppEnvironment.swift in Sources */,
+				0A7B08E229A55260000504FE /* User.swift in Sources */,
 				0A90D5DE2975C64C00056095 /* GetPostCommentsHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
